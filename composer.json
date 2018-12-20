@@ -1,0 +1,9 @@
+{
+	"name": "easysoftware/plg_system_calculoid",
+	"type": "joomlatools-composer",
+	"license": "proprietary",
+	"description": "plg_system_calculoid",
+	"require": {
+		"joomlatools/composer": "*"
+	}
+}

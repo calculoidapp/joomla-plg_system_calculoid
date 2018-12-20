@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" version="2.5.0" method="upgrade">
+	<name>PLG_SYSTEM_CALCULOID</name>
+	<creationDate>2014-04-25</creationDate>
+	<author>EasyJoomla.org</author>
+	<authorEmail>support@easyjoomla.org</authorEmail>
+	<authorUrl>http://www.easyjoomla.org</authorUrl>
+	<copyright>Copyright 2013 EasyJoomla.org - All rights reserved.</copyright>
+	<license>http://opensource.org/licenses/GPL-3.0 GPL-3.0</license>
+	<version>2.1.0</version>
+	<description>PLG_SYSTEM_CALCULOID_DESCRIPTION</description>
+	<files>
+		<filename plugin="calculoid">calculoid.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_calculoid.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_calculoid.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params"> 
+			<fieldset name="basic">
+				<field type="text" name="calc_key" label="PLG_SYSTEM_CALCULOID_PARAM_CALC_KEY" description="PLG_SYSTEM_CALCULOID_PARAM_CALC_KEY_DESC" default="demo2014" />
+				<field name="show_title" type="radio" default="1" label="PLG_SYSTEM_CALCULOID_PARAM_SHOW_TITLE">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="show_description" type="radio" default="1" label="PLG_SYSTEM_CALCULOID_PARAM_SHOW_DESCRIPTION">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="run_in_backend" type="radio" default="0" label="PLG_SYSTEM_CALCULOID_PARAM_RUN_IN_BACKEND">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="load_framework" type="radio" default="2" label="PLG_SYSTEM_CALCULOID_PARAM_LOAD_FRAMEWORK">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+					<option value="2">PLG_SYSTEM_CALCULOID_PARAM_LOAD_FRAMEWORK_YES_2</option>
+				</field>
+				<field name="use_css" type="radio" default="1" label="PLG_SYSTEM_CALCULOID_PARAM_USE_CSS">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="easyjoomla" priority="1" name="Easy Joomla Update"><![CDATA[http://www.easyjoomla.org/index.php?option=com_easyupdate&view=easyupdate&element=plg_system_calculoid&type=plugin&folder=system]]></server>
+	</updateservers>
+</extension>
